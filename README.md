@@ -31,3 +31,4 @@ Favourites Screen
 Artwork details Screen
 ![DetailsScreen](https://github.com/mggil777/MIGUEL_GUSTAVO_ASSIGNMENT_Part_1_2/assets/164178501/36e7582c-0c54-4bc3-b6b8-cdf9d5e32eea)
 
+Thank you for the opportunity.
