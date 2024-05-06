@@ -2,7 +2,7 @@ FRANK ENERGIE Assignment
 
 Part 1
 
-Instructions
+Instructions:
 git clone the repo and then npm install.
 
 expo link
@@ -12,7 +12,7 @@ https://expo.dev/artifacts/eas/oMwt6GoRLAun7RgRutvYoD.aab
 
 Part 2
 
-Instructions
+Instructions:
 execute useCase.ts
 
 
