@@ -15,7 +15,7 @@ Part 2
 Instructions:
 execute useCase.ts
 
-p.s.: please do not pay attention to the phone. It is a tool to test my React native deployments.
+p.s.: please, do not pay attention to the phone. It is a tool to test my React native deployments.
 
 Welcome Screen
 ![WelcomeScreen](https://github.com/mggil777/MIGUEL_GUSTAVO_ASSIGNMENT_Part_1_2/assets/164178501/d3577060-b469-4a18-a3b7-d6ebeebf692f)
