@@ -5,7 +5,7 @@ Part 1
 Instructions:
 git clone the repo and then npm install.
 
-expo link
+expo link / working demo for Android:
 
 https://expo.dev/artifacts/eas/oMwt6GoRLAun7RgRutvYoD.aab
 
