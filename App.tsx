@@ -1,20 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {StyleSheet, SafeAreaView, ActivityIndicator} from 'react-native';
+import Animated, {SlideInDown, SlideInUp} from 'react-native-reanimated';
+
+import SearchBar from './components/SearchArtwork';
+import ViewSelector from './components/FooterPressable';
+
+import Colors from './constants/GlobalColors';
+import {useFonts} from 'expo-font';
+import ScreenManager from './components/ScreenControl';
+
+import {ContextProvider} from './contexts/ContextProvider';
 
 export default function App() {
+  // import custom fonts
+  const [fontsLoaded] = useFonts({
+    'Freeman-Regular': require('./assets/fonts/Freeman-Regular.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return <ActivityIndicator size="large" color={Colors.primaryAccent} />;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.viewRoot} testID="App-component">
+      <ContextProvider>
+        <ScreenManager />
+        <ViewSelector />
+      </ContextProvider>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  viewRoot: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.primaryBackground,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  textContainer: {
+    color: Colors.primaryElement,
   },
 });
